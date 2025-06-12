@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timelyzer - App Usage Tracker</title>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f2f5;
+        color: #333;
+      }
+
+      header {
+        background-color: #3f51b5;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+      }
+
+      .card img.app-icon {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto 1rem;
+        border-radius: 50%; /* ← bu satır ikonu daire yapar */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+      }
+
+      h2 {
+        color: #3f51b5;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        color: #777;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Timelyzer</h1>
+      <p>Track and control your app usage time</p>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <img src="img/icon.png" alt="Timelyzer App Icon" class="app-icon" />
+        <h2>What is Timelyzer?</h2>
+        <p>
+          <strong>Timelyzer</strong> is an Android application that helps users
+          track how much time they spend on different apps. You can visualize
+          your usage patterns with daily and weekly charts.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Track app usage by day and week</li>
+          <li>Set time limits for individual apps</li>
+          <li>Receive alerts when time limits are exceeded</li>
+          <li>User-friendly and clean interface</li>
+          <li>No data is sent or stored externally</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Privacy First</h2>
+        <p>
+          Timelyzer processes all data locally on your device. We do not
+          collect, store, or share any personal data. When you uninstall the
+          app, all usage data is automatically deleted.
+        </p>
+      </div>
+    </div>
+
+    <footer>© 2025 Timelyzer — codenes</footer>
+  </body>
+</html>
